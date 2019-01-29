@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"
+
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
+    <h1>E1 L4d0 O5cur0 D3 L0s M3ns4j3s</h1>
+    <h2>Dark Message</h2>
+    <!--<h2>¿Qué quieres hacer ahora?</h2> -->
+    <p>
+      Esta es una divertida aplicación que te ayudara a crear un mensaje oculto para alguien sin que nadie sepa de lo que estan hablando o descifrar un mensaje que te hayan mandado, esto mediante un metodo que se llama cifrado césar es una de las técnicas más simples para cifrar un mensaje.
+    </p>
+    <p> 
+      Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+    </p>
+
+    <p>
+      Por ejemplo, si usamos un desplazamiento de 3 posiciones:
+    </p>
+
+    <ul>
+      <li>La letra A se cifra como D.</li>
+      <li>La palabra CASA se cifra como FDVD.</li>
+      <li>Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
+      <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
+    </ul>
+    <hr /><br />
+
+    <h2>
+      Instrucciones:
+    </h2>
+
+    <ul><b>
+      <li>Introduce un número máximo de 2 cifras, para el desplazamiento</li>
+      <li>Ingresa tu palabra, frase o mensaje para "Convertir a mensaje secreto" o tu "Mensaje para descifrar"></li>
+    </ul></b>
+
+    <form>
+      <fieldset>
+        <label for="saltos">Elije un numero para el desplazamiento del (1 al 99):</label><br />
+        <input type="number" id="saltos" name="desplazamiento" min="01" max="99"><br /><br />
+        <textarea name="textarea" rows="2" cols="50" placeholder="Escribe tu palabra, frase o texto aquí" required=" "></textarea>
+    </fieldset>
+    </form>
+        
+    <div id="portada">
+      <img src="imagenes/inspector.jpg" alt="Imagen Detective" title="Inspector">
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
