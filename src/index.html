@@ -39,15 +39,20 @@
       <li>Ingresa tu palabra, frase o mensaje para "Convertir a mensaje secreto" o tu "Mensaje para descifrar"></li>
     </ul></b>
 
-    <form>
-      <fieldset>
-        <label for="saltos">Elije un numero para el desplazamiento del (1 al 99):</label><br />
-        <input type="number" id="saltos" name="desplazamiento" min="01" max="99"><br /><br />
-        <textarea name="textarea" rows="2" cols="50" placeholder="Escribe tu palabra, frase o texto aquí" required=" "></textarea><br />
-        <input type="submit" value="Cifrar" name="cifrar">
-        <input type="submit" value="Descifrar" name="descifrar">
-    </fieldset>
+    <form method="post" name="formulario" id="form1">
+        <div>
+          <label for="saltos">Elije un numero para el desplazamiento del (1 al 99):</label><br />
+        <input type="number" id="saltos" name="desplazamiento" min="01" max="99" required><br /><br />
+        </div>
+
+        <div>
+          <textarea id="texto" name="textarea" rows="2" cols="50" placeholder="Escribe tu palabra, frase o texto aquí" required></textarea><br />
+        </div>
+
+        <input type="button" id="cifrar" value="Cifrar" name="cifrar" onclick="encode(offset, texto);" />
+        <input type="button" id="descifrar" value="Descifrar" name="descifrar" onclick="decode(offset, texto);" />
     </form>
+
         
     <div id="portada">
       <img src="imagenes/inspector.jpg" alt="Imagen Detective" title="Inspector">
