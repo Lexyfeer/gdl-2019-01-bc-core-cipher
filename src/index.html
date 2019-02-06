@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -36,28 +36,31 @@
 
     <ul><b>
       <li>Introduce un número máximo de 2 cifras, para el desplazamiento</li>
-      <li>Ingresa tu palabra, frase o mensaje para "Convertir a mensaje secreto" o tu "Mensaje para descifrar"></li>
-    </ul></b>
+      <li>Ingresa tu palabra, frase o mensaje para "Convertir a mensaje secreto" o tu "Mensaje para descifrar"</li>
+    </b></ul>
 
     <form method="post" name="formulario" id="form1">
-        <div>
+        <section>
           <label for="saltos">Elije un numero para el desplazamiento del (1 al 99):</label><br />
         <input type="number" id="saltos" name="desplazamiento" min="01" max="99" required><br /><br />
-        </div>
+        </section>
 
-        <div>
+        <section>
           <textarea id="texto" name="textarea" rows="2" cols="50" placeholder="Escribe tu palabra, frase o texto aquí" required></textarea><br />
-        </div>
+        </section>
 
-        <input type="button" id="cifrar" value="Cifrar" name="cifrar" onclick="encode(offset, texto);" />
-        <input type="button" id="descifrar" value="Descifrar" name="descifrar" onclick="decode(offset, texto);" />
+        <section>
+            <input type="button" id="btnEncode" value="Cifrar" name="encode" />
+            <input type="button" id="btnDecode" value="Descifrar" name="decode" />
+        </section>
     </form>
 
-        
+        <p id="demo"></p>
+
     <div id="portada">
       <img src="imagenes/inspector.jpg" alt="Imagen Detective" title="Inspector">
     </div>
     <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
