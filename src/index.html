@@ -8,9 +8,10 @@
   </head>
 
   <body>
+    <a id="inicio"></a>
+
     <h1>E1 L4d0 O5cur0 D3 L0s M3ns4j3s</h1>
     <h2>Dark Message</h2>
-    <!--<h2>¿Qué quieres hacer ahora?</h2> -->
     <p>
       Esta es una divertida aplicación que te ayudara a crear un mensaje oculto para alguien sin que nadie sepa de lo que estan hablando o descifrar un mensaje que te hayan mandado, esto mediante un metodo que se llama cifrado césar es una de las técnicas más simples para cifrar un mensaje.
     </p>
@@ -30,6 +31,7 @@
     </ul>
     <hr /><br />
 
+    <a id="cuerpo"></a>
     <h2>
       Instrucciones:
     </h2>
@@ -54,12 +56,24 @@
             <input type="button" id="btnDecode" value="Descifrar" name="decode" />
         </section>
     </form>
+    <br />
 
-        <p id="demo"></p>
+    <section>
+          <textarea id="msjSalida" name="mensaje salida" rows="2" cols="50" disabled></textarea>
+          <br />
+    </section>
 
     <div id="portada">
       <img src="imagenes/inspector.jpg" alt="Imagen Detective" title="Inspector">
-    </div>
+    </div><br />
+
+    <p><b>¿Quieres volver a "Cifrar" o "Descifrar" un mensaje?</b></p>
+    <section>
+      <input type="button" id="si" value="Si!!" name="si" />
+      <input type="button" id="no" value="No u.u" name="no" onclick ="despedida ()" />
+    </section>
+    <output id="adios"></output>
+
     <script src="cipher.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
