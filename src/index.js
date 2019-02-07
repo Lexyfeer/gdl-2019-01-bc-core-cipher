@@ -1,3 +1,7 @@
+document.getElementById('next').addEventListener("click",continuar);
+function continuar () {
+    document.getElementById("ver").style.display = 'block';
+}
 
 let btnCifrar = document.getElementById('btnEncode');
 btnCifrar.addEventListener("click",function () {
@@ -14,21 +18,11 @@ btnDescifrar.addEventListener("click",function () {
     document.getElementById("msjSalida").value = fraseDescifrada;
 });
 
-//function inicio () {
-//    
-//}
-//let btnSi = document.getElementById("si");
-//btnSi.addEventListener("click", function () {
-//});
-
+document.getElementById('end').addEventListener("click",despedida);
 function despedida () {
-    let bye = '¡ Hasta la proxima !';
-    document.getElementById("adios").value = bye;
-    
-
+    document.getElementById("form1").reset();
+    document.getElementById("ver").style.display = 'none';
+    alert("'¡ Hasta la proxima !'");
 }
-let btnNo = document.getElementById("no");
-btnNo.addEventListener("click", function () {
-    
-});
+
 

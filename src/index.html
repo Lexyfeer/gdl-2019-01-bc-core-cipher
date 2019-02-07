@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <a id="inicio"></a>
+  <body align="center">
+    <a name="inicio"></a>
 
     <h1>E1 L4d0 O5cur0 D3 L0s M3ns4j3s</h1>
     <h2>Dark Message</h2>
@@ -19,24 +19,32 @@
       Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
     </p>
 
-    <p>
+    <p align="left">
       Por ejemplo, si usamos un desplazamiento de 3 posiciones:
     </p>
 
-    <ul>
+    <ul align="left">
       <li>La letra A se cifra como D.</li>
       <li>La palabra CASA se cifra como FDVD.</li>
       <li>Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
       <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
     </ul>
-    <hr /><br />
+    <br />
 
-    <a id="cuerpo"></a>
-    <h2>
+    <div id="portada">
+        <img src="imagenes/confundido.gif" alt="Imagen confundido" title="¿Qué confusión?">
+    </div><br />
+        <a href="#cuerpo">
+        <input type="button" id="next" value="Continuar" name="continuar" />
+        </a>
+
+    <a name="cuerpo"></a>
+    <div id="ver" style="display:none;">
+      <h2>
       Instrucciones:
     </h2>
 
-    <ul><b>
+    <ul align="left"><b>
       <li>Introduce un número máximo de 2 cifras, para el desplazamiento</li>
       <li>Ingresa tu palabra, frase o mensaje para "Convertir a mensaje secreto" o tu "Mensaje para descifrar"</li>
     </b></ul>
@@ -48,31 +56,37 @@
         </section>
 
         <section>
-          <textarea id="texto" name="textarea" rows="2" cols="50" placeholder="Escribe tu palabra, frase o texto aquí" required></textarea><br />
+          <textarea id="texto" name="textarea" rows="2" cols="50" placeholder="Escribe tu palabra, frase o texto aquí" required></textarea>
         </section>
+        <br />
+        <section>
+            
+            <input type="button" id="btnEncode" value="Cifrar" name="encode" />
+            
+            <input type="button" id="btnDecode" value="Descifrar" name="decode" />
+          
+        </section><br/>
 
         <section>
-            <input type="button" id="btnEncode" value="Cifrar" name="encode" />
-            <input type="button" id="btnDecode" value="Descifrar" name="decode" />
+            <textarea id="msjSalida" name="mensaje salida" rows="2" cols="50" disabled></textarea>
+            <br />
+        </section><br/>
+        <section>
+          <a href="index.html#inicio">
+          <input type="button" id="end" value="Finalizar" name="end"/>
+          </a>
+          <output id="adios"></output>
         </section>
     </form>
     <br />
 
-    <section>
-          <textarea id="msjSalida" name="mensaje salida" rows="2" cols="50" disabled></textarea>
-          <br />
-    </section>
-
-    <div id="portada">
-      <img src="imagenes/inspector.jpg" alt="Imagen Detective" title="Inspector">
+    <div id="inspector">
+      <img src="imagenes/inspector.jpg" alt="Imagen Detective" title="Inspector" height="400">
     </div><br />
 
-    <p><b>¿Quieres volver a "Cifrar" o "Descifrar" un mensaje?</b></p>
-    <section>
-      <input type="button" id="si" value="Si!!" name="si" />
-      <input type="button" id="no" value="No u.u" name="no" onclick ="despedida ()" />
-    </section>
-    <output id="adios"></output>
+    <a name="final"></a>
+    
+  </div>
 
     <script src="cipher.js"></script>
     <script type="text/javascript" src="index.js"></script>
