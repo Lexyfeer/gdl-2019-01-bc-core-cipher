@@ -1,12 +1,11 @@
 window.cipher = {
-
     encode: (offset,texto) => { 
         let nuevaFrase = '';
         for( let i=0; i<texto.length; i++){
             let letraInicial = texto.charCodeAt(i);
             //console.log(letraInicial);
             if (texto.charCodeAt(i) == 32) {
-                nuevaFrase += String.fromCharCode(32)
+                nuevaFrase += String.fromCharCode(32);
             } else {
             let iPosicion = letraInicial - 65;
             //console.log(iPosicion);
@@ -28,14 +27,13 @@ window.cipher = {
         for(let i=0; i<texto.length;i++) {
             let nuevoAscii = (texto.charCodeAt(i) + 65 - offset) % 26 + 65;
             if (texto.charCodeAt(i) == 32) {
-                fraseDescifrada += String.fromCharCode(32)
+                fraseDescifrada += String.fromCharCode(32);
             } else {
             let letraNueva = String.fromCharCode(nuevoAscii);
             fraseDescifrada = fraseDescifrada + letraNueva;
             //nuevaFrase += letraNueva
         }}
-        return fraseDescifrada;
-          
+        return fraseDescifrada;   
     },
 };
   
