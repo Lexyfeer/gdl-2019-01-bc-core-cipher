@@ -26,13 +26,11 @@ Hablar sobre cosas privadas que no quieren que se enteren los hijos por ejemplo 
 ## ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
 Es una herramienta que les permite ocultar todos los mensajes que ellos gusten de una manera sencilla.
 
-
-
-## Checklist
+<!--## Checklist
 
 Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
-<!--### Parte Obligatoria
+### Parte Obligatoria
 
 * [X] `README.md` incluye info sobre proceso y decisiones de diseño.
 * [X] `README.md` explica claramente quiénes son los usuarios y su relación con
