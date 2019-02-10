@@ -6,8 +6,7 @@
     <title>Cesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-
-  <body align="center">
+  <body>
     <a name="inicio"></a>
 
     <h1>E1 L4d0 O5cur0 D3 L0s M3ns4j3s</h1>
@@ -19,54 +18,50 @@
       Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
     </p>
 
-    <p align="left">
+    <p class="izq">
       Por ejemplo, si usamos un desplazamiento de 3 posiciones:
     </p>
 
-    <ul align="left">
+    <ul>
       <li>La letra A se cifra como D.</li>
       <li>La palabra CASA se cifra como FDVD.</li>
       <li>Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
       <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
     </ul>
     <br />
+    <a href="#cuerpo">
+      <input type="button" id="next" value="Continuar" name="continuar"/>
+    </a>
 
-    <div id="portada">
+    <div id="portada" class="fotoPortada">
         <img src="imagenes/confundido.gif" alt="Imagen confundido" title="¿Qué confusión?">
-    </div><br />
-        <a href="#cuerpo">
-        <input type="button" id="next" value="Continuar" name="continuar" />
-        </a>
-
+    </div><br /><br /><br />
+        
     <a name="cuerpo"></a>
     <div id="ver" style="display:none;">
       <h2>
       Instrucciones:
     </h2>
 
-    <ul align="left"><b>
+    <ul><b>
       <li>Introduce un número máximo de 2 cifras, para el desplazamiento</li>
       <li>Ingresa tu palabra, frase o mensaje para "Convertir a mensaje secreto" o tu "Mensaje para descifrar"</li>
     </b></ul>
-
-    <form method="post" name="formulario" id="form1">
+  
+    <form method="post" name="formulario" id="form1" class="formulario">
         <section>
-          <label for="saltos">Elije un numero para el desplazamiento:    </label><br />
-        <input type="number" id="saltos" name="desplazamiento" min="01" max="100" required><br /><br />
+          <label for="saltos">Elije un numero para el desplazamiento:     </label><br />
+        <input type="number" id="saltos" name="desplazamiento" placeholder="1" min="01" max="99" required />
+        <br /><br />
         </section>
-
         <section>
           <textarea id="texto" name="textarea" rows="2" cols="50" placeholder="Escribe tu palabra, frase o texto aquí" required></textarea>
         </section>
         <br />
         <section>
-            
             <input type="button" id="btnEncode" value="Cifrar" name="encode" />
-            
             <input type="button" id="btnDecode" value="Descifrar" name="decode" />
-          
         </section><br/>
-
         <section>
             <textarea id="msjSalida" name="mensaje salida" rows="2" cols="50" disabled></textarea>
             <br />
@@ -78,16 +73,13 @@
           <output id="adios"></output>
         </section>
     </form>
-    <br />
-
-    <div id="inspector">
-      <img src="imagenes/inspector.jpg" alt="Imagen Detective" title="Inspector" height="400">
+    
+    <div id="inspector" class="fotoFinal">
+      <img src="imagenes/inspectorMel.png" alt="Imagen Detective" title="Inspector" height="400">
     </div><br />
 
     <a name="final"></a>
-    
   </div>
-
     <script src="cipher.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>

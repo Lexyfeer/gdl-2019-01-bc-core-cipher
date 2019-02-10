@@ -24,5 +24,3 @@ function despedida () {
     document.getElementById("ver").style.display = 'none';
     alert("'¡ Hasta la proxima !'");
 }
-
-

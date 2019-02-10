@@ -5,4 +5,14 @@ body {
 body { 
     color: #D2C5C2;
     font-family: "Comic Sans MS", cursive, sans-serif; 
+    text-align : justify;
 }
+h1 { text-align: center}
+h2 { text-align: center}
+p.izq {text-align: left}
+ul { text-align: left }
+.formulario { text-align: left }
+
+
+.fotoPortada { float: right; margin-top: -175px}
+.fotoFinal { float: right; margin-top: -290px;}
