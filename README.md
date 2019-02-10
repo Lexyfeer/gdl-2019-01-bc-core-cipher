@@ -32,7 +32,7 @@ Es una herramienta que les permite ocultar todos los mensajes que ellos gusten d
 
 Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
-### Parte Obligatoria
+<!--### Parte Obligatoria
 
 * [X] `README.md` incluye info sobre proceso y decisiones de diseño.
 * [X] `README.md` explica claramente quiénes son los usuarios y su relación con
@@ -58,4 +58,4 @@ Esta sección está para ayudarte a llevar un control de lo que vas completando.
 
 * [X] Cifra/descifra minúsculas
 * [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
-* [ ] Permite usar un `offset` negativo.
+* [ ] Permite usar un `offset` negativo.-->
