@@ -1,15 +1,122 @@
-body { 
-    background-image: url("imagenes/fondoSombra.jpg") 
+/* RESET DE MARGENES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body { 
-    color: #D2C5C2;
-    font-family: "Comic Sans MS", cursive, sans-serif; 
-    text-align : justify;
+
+body {
+  margin: auto;
+  padding: 1rem;
+  background-image: url("imagenes/fondoSombra.jpg");
+  color: #D2C5C2;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-align: justify;
 }
-h1 { text-align: center}
-h2 { text-align: center}
-p.izq {text-align: left}
-ul { text-align: left }
-.formulario { text-align: left }
-.fotoPortada { float: right; margin-top: -175px}
-.fotoFinal { float: right; margin-top: -290px;}
+
+h1,
+h2 {
+  margin: 2rem;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+p.izq {
+  text-align: left;
+}
+
+.ulIndex li {
+  text-align: left;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.btnNext {
+  font-size: 2.5rem;
+  width: 20rem;
+  margin: 2rem 19rem;
+}
+
+.fotoPortada {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.fotoPortada img {
+  width: 40rem;
+}
+
+.ulInstructions li {
+  text-align: center;
+  font-size: 2rem;
+}
+
+form {
+  border: solid .3rem white;
+  border-radius: .7rem;
+  margin: 3rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+form label {
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+form section {
+  margin: 2rem auto;
+}
+
+.btnEncode,
+.btnDecode {
+    width: 15rem;
+    font-size: 2rem;
+    margin: 1.5rem;
+    padding: .5rem;
+  }
+
+.fotoFinal {
+  float: right;
+  margin-top: -290px;
+}
+
+
+
+/* MEDIA QUERIES */
+/* Extra small devices */
+@media only screen and (max-width: 375px) and (max-width: 321px) {
+  ...
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+  ...
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+  ...
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+  ...
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1441px) {
+  ...
+}
