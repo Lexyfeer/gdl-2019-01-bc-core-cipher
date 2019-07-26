@@ -10,19 +10,19 @@ body {
   padding: 2rem;
   color: rgb(8, 185, 255);
   font-family: "Comic Sans MS", cursive, sans-serif;
-  text-align: justify;
   background-image: url("imagenes/fondoSombra1.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 
 h1,
 h2 {
+  text-align: center;
   font-size: 2.5rem;
   margin: 2rem;
-  text-align: center;
 }
 
 p {
+  text-align: justify;
   font-size: 1.5rem;
 }
 
@@ -42,14 +42,11 @@ p.izq {
   margin: 2rem 19rem;
 }
 
-.fotoPortada {
-  margin: 2rem;
-  display: flex;
-  justify-content: center;
-}
-
-.fotoPortada img {
-  width: 40rem;
+img {
+  display: block;
+  position: relative;
+  right: -9rem;
+  width: 30rem;
 }
 
 .ulInstructions li {
@@ -102,16 +99,16 @@ form section {
 
 /* MEDIA QUERIES */
 /* Extra small devices */
-@media only screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {}
 
 /* Extra small devices */
-@media only screen and (max-width: 375px) and (max-width: 321px) {}
+@media screen and (max-width: 375px) and (max-width: 321px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 425px) and (min-width: 376px) {}
+@media screen and (max-width: 425px) and (min-width: 376px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) and (min-width: 426px) {
+@media screen and (max-width: 768px) and (min-width: 426px) {
 
   h1,
   h2 {
@@ -134,12 +131,11 @@ form section {
     margin: 2rem 25rem;
   }
 
-  .fotoPortada {
-    margin: 1rem;
-  }
-
   .fotoPortada img {
     width: 30rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
   }
 
   .ulInstructions li {
@@ -167,7 +163,7 @@ form section {
     margin: 1rem;
   }
 
-  .fotoFinal img {
+  img {
     width: 15rem;
     height: 17rem;
     padding: .8rem;
@@ -176,10 +172,43 @@ form section {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (max-width: 1024px) and (min-width: 769px) {}
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+
+  .btnNext {
+    font-size: 1.7rem;
+    width: 20rem;
+    margin: 2rem;
+  }
+
+  img {
+    left: 25rem;
+    top: -8rem;
+    width: 30rem;
+  }
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+@media screen and (max-width: 1440px) and (min-width: 1025px) {
+
+  .ulIndex {
+    width: 50%;
+  }
+
+  .btnNext {
+    font-size: 1.7rem;
+    width: 20rem;
+    margin: 1rem;
+    position: relative;
+    top: -3rem;
+    left: 27.5rem;
+  }
+
+  img {
+    display: inline;
+    left: 21rem;
+    top: -20rem;
+  }
 
   form {
     width: 70%;
