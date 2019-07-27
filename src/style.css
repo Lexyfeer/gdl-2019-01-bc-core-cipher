@@ -10,11 +10,12 @@ html {
 }
 
 body {
+  height: 100vh;
   padding: .5rem;
   color: rgb(8, 185, 255);
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: 'Farro', sans-serif;
   background-image: url("imagenes/fondoSombra1.jpg");
-  background-size: auto;
+  background-size: cover;
 }
 
 .show {
@@ -187,14 +188,14 @@ form section {
   img {
     width: 30rem;
     left: 23rem;
-    top: -4rem;
+    top: -11rem;
   }
 
   .btnNext {
     float: left;
     width: 20rem;
     position: relative;
-    top: 8rem;
+    top: 1rem;
     left: 12rem;
   }
 
