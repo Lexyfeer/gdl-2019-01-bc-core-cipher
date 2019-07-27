@@ -1,6 +1,7 @@
 document.getElementById('next').addEventListener("click",continuar);
 function continuar () {
     document.getElementById("ver").style.display = 'block';
+    document.getElementById("ocultar").style.display = 'none';
 }
 
 let btnCifrar = document.getElementById('btnEncode');
@@ -22,5 +23,6 @@ document.getElementById('end').addEventListener("click",despedida);
 function despedida () {
     document.getElementById("form1").reset();
     document.getElementById("ver").style.display = 'none';
+    document.getElementById("ocultar").style.display = 'block';
     alert("'¡ Hasta la proxima !'");
 }
