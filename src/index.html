@@ -11,6 +11,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Hoja de estilos -->
   <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="initial-scale=1, width=device-width">
 </head>
 
 <body>
@@ -44,11 +45,11 @@
     <input type="button" id="next" class="btnNext btn btn-primary btn-lg" value="Continuar" name="continuar" />
   </a>
 
-  <img class="fotoPortada" src="imagenes/confundido.gif" alt="Imagen confundido" title="¿Qué confusión?">
+  <img src="imagenes/confundido.gif" class="fotoPortada" alt="Imagen confundido" title="¿Qué confusión?">
 
 
   <a name="cuerpo"></a>
-  <div id="ver" style="display:none;">
+  <div id="ver" class="show">
 
     <h2>Instrucciones:</h2>
 
@@ -85,9 +86,7 @@
       </section>
     </form>
 
-    <div id="inspector" class="fotoFinal">
       <img src="imagenes/inspectorMel.png" alt="Imagen Detective" title="Inspector">
-    </div>
   </div>
   <script src="cipher.js"></script>
   <script type="text/javascript" src="index.js"></script>

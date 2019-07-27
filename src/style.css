@@ -5,25 +5,32 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
-  margin: auto;
-  padding: 2rem;
+  padding: .5rem;
   color: rgb(8, 185, 255);
   font-family: "Comic Sans MS", cursive, sans-serif;
   background-image: url("imagenes/fondoSombra1.jpg");
-  background-size: cover;
+  background-size: auto;
+}
+
+.show {
+  display: none;
 }
 
 h1,
 h2 {
   text-align: center;
-  font-size: 2.5rem;
-  margin: 2rem;
+  font-size: 1.5rem;
+  margin: 1rem;
 }
 
 p {
   text-align: justify;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 p.izq {
@@ -32,36 +39,41 @@ p.izq {
 
 .ulIndex li {
   text-align: left;
-  font-size: 1.5rem;
-  margin: 2rem;
+  font-size: 1rem;
+  margin: 1rem 1.5rem;
 }
 
 .btnNext {
-  font-size: 1.7rem;
-  width: 20rem;
-  margin: 2rem 19rem;
+  font-size: 1.4rem;
+  width: 15rem;
+  margin: 1rem 2rem;
 }
 
 img {
-  display: block;
+  width: 15rem;
+  margin-bottom: 1rem;
   position: relative;
-  right: -9rem;
-  width: 30rem;
+  left: 2.2rem;
+  top: 1rem;
 }
 
 .ulInstructions li {
   text-align: left;
-  font-size: 1.5rem;
-  margin: 2rem;
+  font-size: 1rem;
+  margin: 1rem 1.5rem;
 }
 
 form {
-  width: 90%;
-  border: solid .3rem white;
+  width: 100%;
+  border: solid .2rem white;
   border-radius: .7rem;
-  margin: 3rem;
-  font-size: 1.5rem;
+  margin: auto;
+  font-size: 1rem;
   text-align: center;
+}
+
+textarea {
+  width: 95%;
 }
 
 form label {
@@ -70,31 +82,32 @@ form label {
 }
 
 form section {
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .btnEncode,
 .btnDecode,
 .btnFinish {
-  width: 15rem;
-  font-size: 1.7rem;
-  margin: 1.5rem;
-  padding: .5rem;
+  width: 7rem;
+  font-size: 1rem;
+  margin: .5rem;
+  padding: .4rem;
 }
 
-.fotoFinal {
+.show img {
   float: right;
-  margin-top: -15rem;
-}
-
-.fotoFinal img {
   width: 20rem;
-  height: 25rem;
-  padding: .8rem;
+  height: 20rem;
+  padding: .2rem;
   position: relative;
-  left: 2rem;
+  left: 0rem;
+  top: 1.5rem;
 }
 
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+}
 
 
 /* MEDIA QUERIES */
@@ -102,132 +115,104 @@ form section {
 @media screen and (max-width: 320px) {}
 
 /* Extra small devices */
-@media screen and (max-width: 375px) and (max-width: 321px) {}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-width: 425px) and (min-width: 376px) {}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (max-width: 768px) and (min-width: 426px) {
-
-  h1,
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-
-  .ulIndex li {
-    text-align: left;
-    font-size: 1.2rem;
-    margin: 1rem;
-  }
-
+@media screen and (max-width: 375px) and (min-width: 321px) {
   .btnNext {
-    font-size: 1.2rem;
-    width: 10rem;
-    margin: 2rem 25rem;
-  }
-
-  .fotoPortada img {
-    width: 30rem;
-    margin: 1rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  .ulInstructions li {
-    text-align: center;
-    font-size: 1.2rem;
-  }
-
-  form {
-    font-size: 1.2rem;
-  }
-
-  form label {
-    font-size: 1.2rem;
-  }
-
-  form section {
-    margin: 1rem auto;
-  }
-
-  .btnEncode,
-  .btnDecode,
-  .btnFinish {
-    width: 10rem;
-    font-size: 1.2rem;
-    margin: 1rem;
+    width: 14.5rem;
+    margin: 1rem 4rem;
   }
 
   img {
+    left: 3.5rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 425px) and (min-width: 376px) {
+  .btnNext {
     width: 15rem;
-    height: 17rem;
-    padding: .8rem;
+    margin: auto 5.5rem;
   }
 
+  img {
+    width: 20rem;
+    left: 3rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (max-width: 768px) and (min-width: 426px) {
+  img {
+    width: 25rem;
+    left: 1rem;
+  }
+
+  form {
+    width: 70%;
+    margin: 1.5rem auto;
+  }
+
+  form label {
+    display: block;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-
-  .btnNext {
-    font-size: 1.7rem;
-    width: 20rem;
-    margin: 2rem;
-  }
-
   img {
-    left: 25rem;
-    top: -8rem;
-    width: 30rem;
+    width: 35rem;
+    left: 4rem;
   }
 
+  form {
+    width: 50%;
+    margin: 2rem 4rem;
+  }
+
+  .show img {
+    width: 20rem;
+    height: 30rem;
+    left: -4rem;
+    top: -21.5rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (max-width: 1440px) and (min-width: 1025px) {
 
-  .ulIndex {
-    width: 50%;
-  }
-
-  .btnNext {
-    font-size: 1.7rem;
-    width: 20rem;
-    margin: 1rem;
-    position: relative;
-    top: -3rem;
-    left: 27.5rem;
+  h1,
+  h2 {
+    font-size: 2rem;
   }
 
   img {
-    display: inline;
-    left: 21rem;
-    top: -20rem;
+    width: 30rem;
+    left: 23rem;
+    top: -4rem;
+  }
+
+  .btnNext {
+    float: left;
+    width: 20rem;
+    position: relative;
+    top: 8rem;
+    left: 12rem;
   }
 
   form {
-    width: 70%;
-    font-size: 1.3rem;
+    width: 50%;
+    margin: 2rem 12rem;
   }
 
-  .fotoFinal {
-    float: right;
-    position: relative;
-    right: 2rem;
-    margin-top: -27rem;
+  form section {
+    margin: 2rem auto;
   }
 
-  .fotoFinal img {
+  .show img {
     width: 20rem;
-    height: 25rem;
-    padding: .8rem;
+    height: 30rem;
+    left: -6rem;
+    top: -29.5rem;
   }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
