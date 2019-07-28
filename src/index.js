@@ -24,5 +24,6 @@ function despedida () {
     document.getElementById("form1").reset();
     document.getElementById("ver").style.display = 'none';
     document.getElementById("ocultar").style.display = 'block';
-    alert("'¡ Hasta la proxima !'");
+    // alert("'¡ Hasta la proxima !'");
+    swal({title: "Hasta la próxima!", text: "Regresa pronto!", icon: "info",   button: "Aceptar"});
 }
