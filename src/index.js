@@ -19,11 +19,12 @@ btnDescifrar.addEventListener("click",function () {
     document.getElementById("msjSalida").value = fraseDescifrada;
 });
 
-document.getElementById('end').addEventListener("click",despedida);
-function despedida () {
+document.getElementById('end').addEventListener("click",swal);
+function swal () {
     document.getElementById("form1").reset();
     document.getElementById("ver").style.display = 'none';
     document.getElementById("ocultar").style.display = 'block';
-    // alert("'¡ Hasta la proxima !'");
-    swal({title: "Hasta la próxima!", text: "Regresa pronto!", icon: "info",   button: "Aceptar"});
+
+    // sweet alert
+    swal({title: "Hasta la próxima!", text: "Regresa pronto!", icon: "info", button: "Aceptar"});
 }
